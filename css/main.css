@@ -7739,14 +7739,14 @@ a:hover {
     background: #fff; } }
 
 .headerServ {
-  background: url("../../img/services/bg.jpg");
+  background: url("../img/services/bg.jpg");
   background-repeat: no-repeat;
   background-size: cover; }
   .headerServ__main {
     padding-top: 120px; }
 
 .services-block {
-  background: url("../../img/services/bg2.jpg");
+  background: url("../img/services/bg2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
