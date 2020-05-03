@@ -7400,13 +7400,13 @@ a.text-dark:hover, a.text-dark:focus {
 html {
   height: 100%;
   font-size: 16px;
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  overflow-x: hidden; }
 
 body {
   font: 400 1rem/1.4 "Roboto", sans-serif;
   height: 100%;
-  color: #282828;
-  overflow-x: hidden; }
+  color: #282828; }
 
 ul li {
   list-style-type: none; }
@@ -7420,6 +7420,9 @@ a {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 28px; }
+  @media screen and (max-width: 768px) {
+    .title {
+      font-size: 20px; } }
   .title__nocolor {
     padding: 7px 0; }
   .title__color {
@@ -7432,10 +7435,16 @@ a {
   .title__about {
     font-size: 32px;
     padding: 15px 0; }
+    @media screen and (max-width: 768px) {
+      .title__about {
+        font-size: 24px; } }
   .title__main {
     text-transform: uppercase;
     font-family: 'BebasNeue';
     font-size: 76px; }
+    @media screen and (max-width: 768px) {
+      .title__main {
+        font-size: 40px; } }
   .title__head {
     font-size: 18px;
     font-weight: 300;
@@ -7445,10 +7454,16 @@ a {
     font-weight: 300;
     line-height: 1.2;
     padding-bottom: 40px; }
+    @media screen and (max-width: 768px) {
+      .title__foot {
+        font-size: 20px; } }
 
 .text {
   font-size: 24px;
   line-height: 1.5; }
+  @media screen and (max-width: 768px) {
+    .text {
+      font-size: 20px; } }
 
 .btns {
   width: 300px;
@@ -7496,6 +7511,9 @@ a:hover {
 
 .section {
   padding: 60px 0; }
+  @media screen and (max-width: 768px) {
+    .section {
+      padding: 20px 0; } }
   .section__clickbate {
     background: url("../img/click-bg.png");
     background-repeat: no-repeat;
@@ -7507,9 +7525,18 @@ a:hover {
   .section__testimonial {
     background: url("../img/testimonial-bg.jpg");
     background-repeat: no-repeat; }
+  .section__form {
+    background: #fff; }
+  .section__command {
+    background: url("../img/command-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover; }
 
 .font--middle {
   font-size: 24px; }
+  @media screen and (max-width: 768px) {
+    .font--middle {
+      font-size: 20px; } }
 
 .color--main {
   color: #f9df23; }
@@ -7524,13 +7551,28 @@ a:hover {
     color: #8d8d8d !important;
     transition: 0.1s all linear; }
     .nav-item a:hover {
-      color: #f9df23 !important; }
+      color: #282828 !important; }
 
 .header {
   background: url("../img/header.png");
   height: 100vh;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  position: relative; }
+  @media screen and (max-width: 768px) {
+    .header {
+      background: linear-gradient(to top, rgba(255, 255, 225, 0.7), rgba(255, 255, 255, 0.7)), url("../img/header.png");
+      background-position: 70% 10%; } }
+  .header__name {
+    position: absolute;
+    bottom: 5%;
+    right: 10%;
+    -webkit-clip-path: polygon(3% 0, 95% 0%, 100% 90%, 0% 100%);
+            clip-path: polygon(3% 0, 95% 0%, 100% 90%, 0% 100%);
+    background: #f9df23;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 10px 20px; }
 
 .best__item1, .best__item2, .best__item3 {
   background: #f9df23;
@@ -7541,11 +7583,20 @@ a:hover {
 .best__title {
   text-transform: uppercase;
   font-size: 45px; }
+  @media screen and (max-width: 786px) {
+    .best__title {
+      font-size: 30px; } }
   .best__title--small {
     font-size: 36px; }
+    @media screen and (max-width: 786px) {
+      .best__title--small {
+        font-size: 24px; } }
 
 .best__number {
   font-size: 120px; }
+  @media screen and (max-width: 786px) {
+    .best__number {
+      font-size: 70px; } }
 
 .best__item1 {
   padding: 50px 30px;
@@ -7557,6 +7608,9 @@ a:hover {
   -webkit-clip-path: polygon(0 0, 100% 14%, 76% 100%, 20% 85%);
           clip-path: polygon(0 0, 100% 14%, 76% 100%, 20% 85%);
   margin-top: 90px; }
+  @media screen and (max-width: 786px) {
+    .best__item2 {
+      margin-top: 20px; } }
 
 .best__item3 {
   padding: 30px 20px;
@@ -7569,6 +7623,9 @@ a:hover {
   position: relative;
   color: #282828;
   transition: 0.3s all linear; }
+  @media screen and (max-width: 768px) {
+    .services {
+      padding: 15px 0; } }
   .services:hover {
     color: #f9df23; }
   .services:after {
@@ -7588,6 +7645,9 @@ a:hover {
     line-height: 1;
     margin-right: 15px;
     text-align: center; }
+    @media screen and (max-width: 768px) {
+      .services__number {
+        font-size: 100px; } }
   .services__social {
     color: #f9df23;
     font-size: 24px;
@@ -7617,6 +7677,9 @@ a:hover {
   .whyus__footer {
     padding-top: 200px;
     padding-bottom: 30px; }
+    @media screen and (max-width: 768px) {
+      .whyus__footer {
+        padding-top: 20px; } }
 
 .portfolio__header {
   padding: 25px 0; }
@@ -7650,3 +7713,59 @@ a:hover {
 .footer {
   background: #282828;
   padding: 20px 0; }
+
+.bodyBlog {
+  background: #f9df23; }
+  .bodyBlog__item {
+    background: #fff;
+    max-height: 300px;
+    overflow: hidden;
+    margin-bottom: 30px; }
+    .bodyBlog__item__text {
+      max-height: 150px;
+      overflow: hidden; }
+    .bodyBlog__item__date {
+      color: #ccc;
+      padding-bottom: 10px; }
+
+@media screen and (max-width: 768px) {
+  .portfolio__header {
+    flex-direction: column;
+    align-items: center; }
+  .services__footer {
+    flex-direction: column;
+    align-items: center; }
+  .navbar {
+    background: #fff; } }
+
+.headerServ {
+  background: url("../../img/services/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .headerServ__main {
+    padding-top: 120px; }
+
+.services-block {
+  background: url("../../img/services/bg2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+  z-index: -1; }
+  @media screen and (max-width: 768px) {
+    .services-block {
+      padding: 30px 0; } }
+  .services-block__number {
+    font-size: 80px;
+    font-weight: 700;
+    position: relative;
+    z-index: 1; }
+    .services-block__number:before {
+      position: absolute;
+      content: '';
+      width: 100px;
+      height: 100px;
+      background: rgba(255, 255, 255, 0.5);
+      top: 0;
+      left: 0;
+      border-radius: 50%; }
